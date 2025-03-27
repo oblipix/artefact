@@ -1,0 +1,128 @@
+/* Container principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Título */
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  /* Formulário */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .label {
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  }
+  
+  .textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  /* Botões */
+  .buttonGroup {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .submitButton {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submitButton:hover {
+    background-color: #2563eb;
+  }
+  
+  .submitButton:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+  }
+  
+  .cancelButton {
+    background-color: #6b7280;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .cancelButton:hover {
+    background-color: #4b5563;
+  }
+  
+  .backButton {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+
+  
+  
+  /* Mensagens de erro */
+  .errorText {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .errorMessage {
+    color: #ef4444;
+    margin-top: 1rem;
+  }
+  
+  /* Estados de carregamento */
+  .loadingContainer,
+  .notFoundContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    text-align: center;
+  }
